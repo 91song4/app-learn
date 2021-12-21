@@ -7,15 +7,54 @@
     <title>로그인페이지</title>
     <style>
         .mytitle {
-            color: red;
-            font-size: 40px;
+            /*background-color: green;*/
+
+            width: 300px;
+            height: 200px;
+
+            color: white;
+            text-align: center;
+
+            background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 10px;
+
+            padding-top: 20px;
+
+        }
+
+        .mybtn {
+            /*padding: 20px;*/
+            /*margin: 20px 0px 0px 100px;*/
+            border-radius: 10px;
+            /*width: 100px;*/
+            /*margin: auto;*/
+            /*display: block;*/
+        }
+        /*.redfont{*/
+        /*    color: red;*/
+        /*    font-size: 16px;*/
+        /*}*/
+
+        .wrap {
+            /*background-color: green;*/
+            width: 300px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <h1 class="mytitle">로그인 페이지</h1>
-    <p>ID: <input type="text"/></p>
-    <p>PW: <input type="text"/></p>
-    <button> 로그인하기</button>
+    <div class="wrap">
+        <div class="mytitle">
+            <h1>로그인 페이지</h1>
+            <h5>아이디, 패스워드를 입력해주세요</h5>
+        </div>
+
+        <p>ID: <input type="text"/></p>
+        <p>PW: <input type="text"/></p>
+        <button class="mybtn redfont"> 로그인하기</button>
+    </div>
 </body>
 </html>
