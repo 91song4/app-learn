@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkEmail() {
+            var email = document.getElementById('email').value;
+            const regEmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
+            if(regEmail.test(email) === true){
+                alert('인증 되었습니다.');
+            }else{
+                alert('이메일 형식이 아닙니다.');
+            }
+        }
+    </script>
+    <input type ="text" id ="email"/>
+    <input type ="button" onclick ="checkEmail()" value= "이메일인증"/>
+</body>
+</html>
