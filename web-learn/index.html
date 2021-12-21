@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Stylish&amp;display=swap" rel="stylesheet">
 
     <style>
-        *{
+        * {
             font-family: 'Stylish', sans-serif;
         }
 
@@ -35,77 +35,115 @@
 
         }
 
-        .comment{
+        .comment {
             color: blue;
             font-weight: bold;
+        }
+
+        .form {
+            width: 500px;
+            height: 340px;
+            margin: auto auto 20px auto;
+            /*margin-bottom: 20px;*/
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 50px;
         }
 
     </style>
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="jumbotron">
-            <h1 class="display-4">나홀로 링크 메모장!</h1>
-            <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
-            <hr class="my-4">
-<!--            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
-            </p>
+<div class="wrap">
+    <div class="jumbotron">
+        <h1 class="display-4">나홀로 링크 메모장!</h1>
+        <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
+        <hr class="my-4">
+        <!--            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
+        </p>
+    </div>
+    <div class="form">
+        <div class="form-group">
+            <label for="exampleInputEmail1">아티클 URL</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="">
+            <!--                <small id="emailHelp" class="form-text text-muted"></small>-->
         </div>
-        <div class="card-columns">
-            <div class="card">
-                <img class="card-img-top" src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
-                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                    <p class="comment">여기에 코멘트가 들어갑니다.</p>
-                </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">간단 코멘트</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        </div>
+        <div class="form-check">
+            <!--                <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+            <!--                <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+        </div>
+        <button type="submit" class="btn btn-primary">기사저장</button>
+    </div>
+    <div class="card-columns">
+        <div class="card">
+            <img class="card-img-top"
+                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
+                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
             </div>
         </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
+                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                <p class="comment">여기에 코멘트가 들어갑니다.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
+                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                <p class="comment">여기에 코멘트가 들어갑니다.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
+                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                <p class="comment">여기에 코멘트가 들어갑니다.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
+                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                <p class="comment">여기에 코멘트가 들어갑니다.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <a href="http://naver.com/" class="card-title">여기 기사 제목이 들어가죠</a>
+                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                <p class="comment">여기에 코멘트가 들어갑니다.</p>
+            </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>
