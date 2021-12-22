@@ -364,5 +364,4 @@ let mise_list = [
 //         list.push(mise_list[i].MSRSTE_NM)
 //     }
 //   }
-
-//   console.log(list)
+  console.log(list)
