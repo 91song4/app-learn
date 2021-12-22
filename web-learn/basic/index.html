@@ -51,6 +51,17 @@
         }
 
     </style>
+    <script>
+        let count = 0;
+        function hey(){
+            count += 1;
+            if(count % 2 == 0){
+                alert(count + '번째 클릭' + '(짝수)');
+            }else{
+                alert(count + '번째 클릭' + '(홀수)');
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -61,7 +72,7 @@
         <hr class="my-4">
         <!--            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
+            <a onclick="hey()" class="btn btn-primary btn-lg" href="#" role="button">포스팅박스 열기</a>
         </p>
     </div>
     <div class="form">
