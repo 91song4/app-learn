@@ -62,8 +62,8 @@ const styles = StyleSheet.create({
   },
 });
 
-; - 버튼 설명서
-; https://reactnative.dev/docs/button
+// ; - 버튼 설명서
+// ; https://reactnative.dev/docs/button
 
-; - 팝업 알람(Alert) 설명서
-; https://reactnative.dev/docs/alert#docsNav
+// ; - 팝업 알람(Alert) 설명서
+// ; https://reactnative.dev/docs/alert#docsNav
