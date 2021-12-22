@@ -43,6 +43,7 @@
         .myinput{
             margin-left: 10%;
         }
+        }
     </style>
     <script>
         function check(){
@@ -65,7 +66,20 @@
         <h1>밤 하늘에 pearl<span style="font-size:22px">     개당 500원 팝니다</span></h1>
         <p>여자친구꺼 따러 가는 김에 따드립니다</p>
         <p class="myp">이름<input class ="myinput" id="checkName"/></p>
-        <p class="myp">수량</p>
+        <div class="btn-group show">
+            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true">수량
+            </button>
+            <div class="dropdown-menu show" x-placement="bottom-start"
+                 style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#">밤안개</a>
+                <a class="dropdown-item" href="#">진돗개</a>
+                <a class="dropdown-item" href="#">네 마음에 별 한개</a>
+                <!--      <div class="dropdown-divider"></div>-->
+                <!--      <a class="dropdown-item" href="#">Separated link</a>-->
+            </div>
+        </div>
+        <p></p>
         <p class="myp">주소<input class ="myinput"/></p>
         <p class="myp">핸드폰<input style="margin-left: 46px" id="checkPhone"/></p>
         <button onclick="check()" class="btn btn-warning">주문</button>
