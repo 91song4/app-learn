@@ -19,8 +19,8 @@
     </style>
 
     <script>
-      function q1() {
-        $.ajax({
+        function q1() {
+            $.ajax({
                 type: "GET",
                 url: "https://api.thecatapi.com/v1/images/search",
                 data: {},
@@ -29,7 +29,7 @@
                     $('#img-cat').attr('src',img)
                 }
             })
-      }
+        }
     </script>
 
   </head>
