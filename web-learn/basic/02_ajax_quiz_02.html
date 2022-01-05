@@ -1,0 +1,89 @@
+    <!-- 👉 [한걸음 더]
+    따릉이 대수가 5대 미만인 곳은 빨갛게 보여주면 어떨까요? -->
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery 연습하고 가기!</title>
+    <!-- JQuery를 import 합니다 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style type="text/css">
+        div.question-box {
+            margin: 10px 0 20px 0;
+        }
+
+        table {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid;
+        }
+    </style>
+
+    <script>
+        function q1() {
+            $('#names-q1').empty();
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/sparta_api/seoulbike",
+                data: {},
+                success: function (response) {
+                    let rows = response['getStationList']['row'];
+                    for(let i = 0; i < rows.length; i++){
+                        let ddr_station = rows[i]['stationName'];
+                        let ddr_rackTot = rows[i]['rackTotCnt'];
+                        let ddr_parking = rows[i]['parkingBikeTotCnt'];
+                        if(ddr_parking < 5){
+                            let txt = `<tr style="color:red">
+                                       <td>${ddr_station}</td>
+                                       <td>${ddr_rackTot}</td>
+                                       <td>${ddr_parking}</td>
+                                   </tr>`;
+                            $('#names-q1').append(txt);
+                        }else{
+                            let txt = `<tr>
+                                       <td>${ddr_station}</td>
+                                       <td>${ddr_rackTot}</td>
+                                       <td>${ddr_parking}</td>
+                                   </tr>`;
+                            $('#names-q1').append(txt);
+                        }
+                    }
+                }
+            })
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>jQuery + Ajax의 조합을 연습하자!</h1>
+
+    <hr />
+
+    <div class="question-box">
+        <h2>2. 서울시 OpenAPI(실시간 따릉기 현황)를 이용하기</h2>
+        <p>모든 위치의 따릉이 현황을 보여주세요</p>
+        <p>업데이트 버튼을 누를 때마다 지웠다 새로 씌여져야 합니다.</p>
+        <button onclick="q1()">업데이트</button>
+        <table>
+            <thead>
+                <tr>
+                    <td>거치대 위치</td>
+                    <td>거치대 수</td>
+                    <td>현재 거치된 따릉이 수</td>
+                </tr>
+            </thead>
+            <tbody id="names-q1">
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
